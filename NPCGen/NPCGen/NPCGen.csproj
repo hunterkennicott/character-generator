@@ -52,8 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Generate.cs" />
-    <Compile Include="Modifiers.cs" />
+    <Compile Include="Generator.cs" />
+    <Compile Include="Generator\ClericGenerator.cs" />
+    <Compile Include="Generator\FighterGenerator.cs" />
+    <Compile Include="Generator\GeneratorFactory.cs" />
+    <Compile Include="Generator\RogueGenerator.cs" />
+    <Compile Include="Generator\SorcererGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RaceClass.cs" />

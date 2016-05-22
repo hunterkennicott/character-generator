@@ -7,3 +7,12 @@ d:\hunter\documents\visual studio 2015\Projects\NPCGen\NPCGen\obj\Debug\NPCGen.c
 d:\hunter\documents\visual studio 2015\Projects\NPCGen\NPCGen\obj\Debug\NPCGen.exe
 d:\hunter\documents\visual studio 2015\Projects\NPCGen\NPCGen\obj\Debug\NPCGen.pdb
 d:\hunter\documents\visual studio 2015\Projects\NPCGen\NPCGen\obj\Debug\NPCGen.csprojResolveAssemblyReference.cache
+C:\git\character-generator\NPCGen\NPCGen\bin\Debug\NPCGen.exe.config
+C:\git\character-generator\NPCGen\NPCGen\obj\Debug\NPCGen.exe
+C:\git\character-generator\NPCGen\NPCGen\obj\Debug\NPCGen.pdb
+C:\git\character-generator\NPCGen\NPCGen\bin\Debug\NPCGen.exe
+C:\git\character-generator\NPCGen\NPCGen\bin\Debug\NPCGen.pdb
+C:\git\character-generator\NPCGen\NPCGen\obj\Debug\NPCGen.csprojResolveAssemblyReference.cache
+C:\git\character-generator\NPCGen\NPCGen\obj\Debug\NPCGen.Form1.resources
+C:\git\character-generator\NPCGen\NPCGen\obj\Debug\NPCGen.Properties.Resources.resources
+C:\git\character-generator\NPCGen\NPCGen\obj\Debug\NPCGen.csproj.GenerateResource.Cache

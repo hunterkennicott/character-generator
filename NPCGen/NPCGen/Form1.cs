@@ -7,19 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NPCGen.Generate;
 
 namespace NPCGen
 {
     public partial class Form1 : Form
     {
-        int str, 
+        private int str, 
             dex, 
             con, 
             intel, 
             wis, 
             cha, 
             hp, 
-            bab, 
+            baseAttackBonus, 
             fort, 
             reflex, 
             will, 
@@ -105,7 +106,7 @@ namespace NPCGen
             output.AppendText(
                 "Name: " + nameInput.Text +
                 "\r\nLevel: 1" + "                                HP: " + hp +
-                "\r\nRace: " + raceBox.Text + "                    Base Attack Bonus: " + bab +
+                "\r\nRace: " + raceBox.Text + "                    Base Attack Bonus: " + baseAttackBonus +
                 "\r\nClass: " + classBox.Text + "                    Fort: " + fort +
                 "\r\nAttributes:" + "                         Reflex: " + reflex
             );
@@ -189,34 +190,30 @@ namespace NPCGen
 
         private void ExecuteGen()
         {
-            var execute = new Generate();
-            var mods = new Modifiers();
+            Generator execute = GeneratorFactory.GetGenerator(classBox.Text);
 
             //stats
-            str = execute.StatRoll();
-            dex = execute.StatRoll();
-            con = execute.StatRoll();
-            intel = execute.StatRoll();
-            wis = execute.StatRoll();
-            cha = execute.StatRoll();
+            str = execute.GetStatRoll();
+            dex = execute.GetStatRoll();
+            con = execute.GetStatRoll();
+            intel = execute.GetStatRoll();
+            wis = execute.GetStatRoll();
+            cha = execute.GetStatRoll();
 
             //ability modifiers
-            strAbMod = execute.AbilityMod(str);
-            dexAbMod = execute.AbilityMod(dex);
-            conAbMod = execute.AbilityMod(con);
-            intelAbMod = execute.AbilityMod(intel);
-            wisAbMod = execute.AbilityMod(wis);
-            chaAbMod = execute.AbilityMod(cha);
+            strAbMod = execute.GetAbilityMod(str);
+            dexAbMod = execute.GetAbilityMod(dex);
+            conAbMod = execute.GetAbilityMod(con);
+            intelAbMod = execute.GetAbilityMod(intel);
+            wisAbMod = execute.GetAbilityMod(wis);
+            chaAbMod = execute.GetAbilityMod(cha);
 
             //hp and saving throws
-            hp = execute.HP(classBox.Text, conAbMod);
-            bab = mods.BabMod(classBox.Text, bab);
-            fort = mods.FortMod(classBox.Text, fort);
-            reflex = mods.ReflexMod(classBox.Text, reflex);
-            will = mods.WillMod(classBox.Text, will);
-
-            //spells
-
+            hp = execute.GetHP(conAbMod);
+            baseAttackBonus = execute.GetBaseAttackBonus(baseAttackBonus);
+            fort = execute.FortMod(fort);
+            reflex = execute.ReflexMod(reflex);
+            will = execute.WillMod(will);
         }
     }
 }
