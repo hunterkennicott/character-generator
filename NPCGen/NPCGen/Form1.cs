@@ -111,8 +111,7 @@ namespace NPCGen
                 "\r\nAttributes:" + "                         Reflex: " + reflex
             );
 
-            RaceMod();
-            SpellCount();            
+            RaceMod();          
             
             output.AppendText(
                 "\r\nDEX: " + dex + " (" + dexAbMod + ")" + "                    Will: " + will +
@@ -143,51 +142,6 @@ namespace NPCGen
             }
         }
 
-        private void SpellCount()
-        {
-            if (classBox.Text == "Sorcerer")
-            {
-                zeroSpells = 0;
-                zeroSpells = zeroSpells + 5;
-                firstSpells = 0;
-                firstSpells = firstSpells + 3;
-                
-                if (cha >= 14 && cha <= 17)
-                {
-                    firstSpells = 0;
-                    firstSpells = 4;
-                }
-                else if (cha >= 18 && cha <= 21)
-                {
-                    firstSpells = 0;
-                    firstSpells = 5;
-                }
-            }
-            else if (classBox.Text == "Cleric")
-            {
-                zeroSpells = 0;
-                zeroSpells = zeroSpells + 3;
-                firstSpells = 0;
-                firstSpells = firstSpells + 1;
-
-                if (wis >= 14 && wis <= 17)
-                {
-                    firstSpells = 0;
-                    firstSpells = 2;
-                }
-                else if (wis >= 18 && wis <= 21)
-                {
-                    firstSpells = 0;
-                    firstSpells = 3;
-                }
-            }
-            else
-            {
-                zeroSpells = 0;
-                firstSpells = 0;
-            }
-        }
-
         private void ExecuteGen()
         {
             Generator execute = GeneratorFactory.GetGenerator(classBox.Text);
@@ -214,6 +168,18 @@ namespace NPCGen
             fort = execute.FortMod(fort);
             reflex = execute.ReflexMod(reflex);
             will = execute.WillMod(will);
+
+            //spells per day
+            zeroSpells = execute.ZeroSpells(zeroSpells);
+            //first spells determined by cha for sorc, wis for cleric
+            if (classBox.Text == "Sorcerer")
+            {
+                firstSpells = execute.FirstSpells(firstSpells, cha);
+            }
+            else if(classBox.Text == "Cleric")
+            {
+                firstSpells = execute.FirstSpells(firstSpells, wis);
+            }
         }
     }
 }

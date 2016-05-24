@@ -81,6 +81,8 @@ namespace NPCGen.Generate
         public abstract int FortMod(int fortitude);
         public abstract int ReflexMod(int reflex);
         public abstract int WillMod(int will);
+        public abstract int ZeroSpells(int zeroSpells);
+        public abstract int FirstSpells(int firstSpells, int bonusSpells);
 
         protected int RollDFour()
         {

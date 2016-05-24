@@ -32,5 +32,15 @@ namespace NPCGen.Generate
         {
             return will = 0;
         }
+
+        public override int ZeroSpells(int zeroSpells)
+        {
+            return zeroSpells = 0;
+        }
+
+        public override int FirstSpells(int firstSpellsSorc, int cha)
+        {
+            return firstSpellsSorc = 0;
+        }
     }
 }

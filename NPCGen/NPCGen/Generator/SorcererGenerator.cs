@@ -32,5 +32,28 @@ namespace NPCGen.Generate
         {
             return will = 2;
         }
+
+        public override int ZeroSpells(int zeroSpells)
+        {
+            return zeroSpells = 5;
+        }
+
+        public override int FirstSpells(int firstSpells, int cha)
+        {
+            firstSpells = 3;
+
+            if (cha >= 14 && cha <= 17)
+            {
+                firstSpells = 0;
+                firstSpells = 4;
+            }
+            else if (cha >= 18 && cha <= 21)
+            {
+                firstSpells = 0;
+                firstSpells = 5;
+            }
+
+            return firstSpells;
+        }
     }
 }
