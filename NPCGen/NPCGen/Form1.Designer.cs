@@ -45,10 +45,10 @@
             // 
             this.title.AutoSize = true;
             this.title.BackColor = System.Drawing.Color.Transparent;
-            this.title.Font = new System.Drawing.Font("Pristina", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title.Location = new System.Drawing.Point(36, 43);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(350, 104);
+            this.title.Size = new System.Drawing.Size(473, 92);
             this.title.TabIndex = 17;
             this.title.Text = "Dungeons and Dragons \r\n3.5 NPC Generator";
             // 
@@ -68,8 +68,8 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.button1.Font = new System.Drawing.Font("Pristina", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(117, 296);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(146, 296);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(300, 57);
             this.button1.TabIndex = 15;
@@ -82,7 +82,7 @@
             this.classBox.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.classBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.classBox.FormattingEnabled = true;
-            this.classBox.Location = new System.Drawing.Point(117, 247);
+            this.classBox.Location = new System.Drawing.Point(146, 247);
             this.classBox.Name = "classBox";
             this.classBox.Size = new System.Drawing.Size(229, 33);
             this.classBox.TabIndex = 14;
@@ -92,7 +92,7 @@
             this.raceBox.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.raceBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.raceBox.FormattingEnabled = true;
-            this.raceBox.Location = new System.Drawing.Point(117, 208);
+            this.raceBox.Location = new System.Drawing.Point(146, 208);
             this.raceBox.Name = "raceBox";
             this.raceBox.Size = new System.Drawing.Size(229, 33);
             this.raceBox.TabIndex = 13;
@@ -101,7 +101,7 @@
             // 
             this.nameInput.BackColor = System.Drawing.Color.PapayaWhip;
             this.nameInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameInput.Location = new System.Drawing.Point(117, 170);
+            this.nameInput.Location = new System.Drawing.Point(146, 170);
             this.nameInput.Name = "nameInput";
             this.nameInput.Size = new System.Drawing.Size(300, 31);
             this.nameInput.TabIndex = 12;
@@ -110,10 +110,10 @@
             // 
             this.race.AutoSize = true;
             this.race.BackColor = System.Drawing.Color.Transparent;
-            this.race.Font = new System.Drawing.Font("Pristina", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.race.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.race.Location = new System.Drawing.Point(36, 206);
             this.race.Name = "race";
-            this.race.Size = new System.Drawing.Size(78, 44);
+            this.race.Size = new System.Drawing.Size(98, 38);
             this.race.TabIndex = 11;
             this.race.Text = "Race";
             // 
@@ -121,10 +121,10 @@
             // 
             this.npcClass.AutoSize = true;
             this.npcClass.BackColor = System.Drawing.Color.Transparent;
-            this.npcClass.Font = new System.Drawing.Font("Pristina", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.npcClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.npcClass.Location = new System.Drawing.Point(38, 245);
             this.npcClass.Name = "npcClass";
-            this.npcClass.Size = new System.Drawing.Size(77, 44);
+            this.npcClass.Size = new System.Drawing.Size(105, 38);
             this.npcClass.TabIndex = 10;
             this.npcClass.Text = "Class";
             // 
@@ -132,21 +132,21 @@
             // 
             this.name.AutoSize = true;
             this.name.BackColor = System.Drawing.Color.Transparent;
-            this.name.Font = new System.Drawing.Font("Pristina", 24.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name.Location = new System.Drawing.Point(24, 167);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(90, 44);
+            this.name.Size = new System.Drawing.Size(108, 38);
             this.name.TabIndex = 9;
             this.name.Text = "Name";
             // 
             // output
             // 
             this.output.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.output.Font = new System.Drawing.Font("Pristina", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.output.Location = new System.Drawing.Point(443, 42);
+            this.output.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.output.Location = new System.Drawing.Point(515, 42);
             this.output.Multiline = true;
             this.output.Name = "output";
-            this.output.Size = new System.Drawing.Size(492, 358);
+            this.output.Size = new System.Drawing.Size(420, 358);
             this.output.TabIndex = 20;
             // 
             // Form1
