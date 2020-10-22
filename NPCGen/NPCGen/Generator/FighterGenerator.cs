@@ -11,7 +11,16 @@ namespace NPCGen.Generate
 
         public override int GetHP(int conMod)
         {
-            return RollDTen() + conMod;
+            //if (conMod > 0)
+            //{
+            //    return RollDTen() + conMod;
+            //}
+            //else
+            //{
+            //    return RollDTen();
+            //}
+
+            return 10 + conMod;
         }
 
         public override int GetBaseAttackBonus(int baseAttackBonus)
